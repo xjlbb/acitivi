@@ -18,6 +18,10 @@ Activiti学习
   5.第三方数据连接池 dbcp  
   6.单元测试 Junit-4.12.jar
 
-###绘制插件
-idea在2019年之后就没有再更新维护Activiti的设计工具，在高版本的IDEA中没法使用actiBPM插件来绘制  
-- 解决方案：1、降低idea版本 2、通过Eclipse安装来实现流程的设计
+> ###绘制插件
+> idea在2019年之后就没有再更新维护Activiti的设计工具，在高版本的IDEA中没法使用actiBPM插件来绘制  
+> - 解决方案：1、降低idea版本 2、通过Eclipse安装来实现流程的设计  
+  
+> ###idea相关问题
+> New 中无 XML Configuration File 选项，idea社区版不支持  
+  
