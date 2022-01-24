@@ -1,12 +1,15 @@
 package com.activiti.test;
 
 import org.activiti.engine.*;
+import org.activiti.engine.history.HistoricActivityInstance;
+import org.activiti.engine.history.HistoricActivityInstanceQuery;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
+
 
 import java.util.List;
 
@@ -53,7 +56,7 @@ public class demo {
         Deployment deploy = service.createDeployment()
                 .addClasspathResource("bpmn/evection.bpmn") // 添加bpmn资源
                 .addClasspathResource("bpmn/evection.png") // 添加png资源
-                .name("出差申请流程")
+                .name("出差申请流程-2")
                 .deploy();// 部署流程
         // 4.输出流程部署的信息
         System.out.println("流程部署的id:" + deploy.getId());
@@ -113,7 +116,7 @@ public class demo {
         TaskService taskService = engine.getTaskService();
         Task task = taskService.createTaskQuery()
                 .processDefinitionKey("evection")
-                .taskAssignee("zhansan")
+                .taskAssignee("lisi")
                 .singleResult(); // 完成任务
         taskService.complete(task.getId());
     }
@@ -144,13 +147,39 @@ public class demo {
     /**
      * 删除流程
      */
+    @Test
     public void test08(){
         ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
         RepositoryService repositoryService = engine.getRepositoryService();
         // 删除流程定义，如果该流程定义已经有了流程实例启动则删除时报错, 在ACT_RE_DEPLOYMENT中找ID
-        repositoryService.deleteDeployment("1");
+        repositoryService.deleteDeployment("7501");
         // 设置为TRUE 级联删除流程定义，及时流程有实例启动，也可以删除，设置为false 非级联删 除操作。
         // repositoryService.deleteDeployment("12501",true);
+    }
+
+    /**
+     *  流程历史信息查看
+     */
+    @Test
+    public void test09(){
+        ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+        // 查看历史信息我们需要通过 HistoryService来实现
+        HistoryService historyService = engine.getHistoryService();
+        // 获取 actinst 表的查询对象
+        HistoricActivityInstanceQuery instanceQuery = historyService.createHistoricActivityInstanceQuery();
+        instanceQuery.processDefinitionId("evection:1:4");
+        instanceQuery.orderByHistoricActivityInstanceStartTime().desc();
+        List<HistoricActivityInstance> list = instanceQuery.list();
+        // 输出查询的结果
+        for (HistoricActivityInstance hi : list) {
+            System.out.println(hi.getActivityId());
+            System.out.println(hi.getActivityName());
+            System.out.println(hi.getActivityType());
+            System.out.println(hi.getAssignee());
+            System.out.println(hi.getProcessDefinitionId());
+            System.out.println(hi.getProcessInstanceId());
+            System.out.println("-----------------------");
+        }
     }
 
 }
