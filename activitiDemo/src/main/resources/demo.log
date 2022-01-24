@@ -1,0 +1,1064 @@
+2022-01-24 10:09:12,743 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 10:09:12,744 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 10:09:12,991 248    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 10:09:12,993 250    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 10:09:13,261 518    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 10:09:13,266 523    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 10:09:13,278 535    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 10:09:14,041 1298   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 10:09:14,042 1299   [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 10:09:14,042 1299   [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 10:09:14,042 1299   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:09:14,760 2017   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:09:14,760 2017   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 10:09:14,762 2019   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:09:14,768 2025   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 10:09:14,768 2025   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:09:14,768 2025   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:09:14,768 2025   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,881 2138   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 10:09:14,893 2150   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 10:09:14,911 2168   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 10:09:14,915 2172   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:09:14,915 2172   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 10:09:14,915 2172   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:09:14,915 2172   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:09:14,916 2173   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:09:14,916 2173   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:09:14,916 2173   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,919 2176   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,919 2176   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:09:14,919 2176   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 10:09:14,919 2176   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:09:14,919 2176   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 10:09:14,923 2180   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:09:14,923 2180   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 10:09:14,923 2180   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:09:14,923 2180   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:09:14,923 2180   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:09:14,923 2180   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,925 2182   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 10:09:14,925 2182   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 10:09:14,926 2183   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 10:09:14,927 2184   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:09:14,927 2184   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 10:09:14,927 2184   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:09:14,927 2184   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:09:14,927 2184   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:09:14,927 2184   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:09:14,927 2184   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,928 2185   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:09:14,928 2185   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:09:14,928 2185   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 10:09:14,928 2185   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:09:14,928 2185   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 10:09:14,929 2186   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:09:14,931 2188   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting  --------------------------------------------------------
+2022-01-24 10:09:14,931 2188   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:09:14,933 2190   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:09:14,933 2190   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:09:14,933 2190   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:09:14,933 2190   [           main] DEBUG mpl.interceptor.LogInterceptor  - ---  finished --------------------------------------------------------
+2022-01-24 10:09:14,933 2190   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:45,264 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 10:11:45,264 0      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 10:11:45,438 174    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 10:11:45,439 175    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 10:11:45,649 385    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 10:11:45,655 391    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 10:11:45,665 401    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 10:11:46,106 842    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 10:11:46,108 844    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 10:11:46,108 844    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 10:11:46,108 844    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:11:46,696 1432   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,696 1432   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 10:11:46,698 1434   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:46,703 1439   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 10:11:46,703 1439   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:11:46,703 1439   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:11:46,703 1439   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,738 1474   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 10:11:46,749 1485   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 10:11:46,763 1499   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 10:11:46,770 1506   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:11:46,770 1506   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 10:11:46,770 1506   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:11:46,770 1506   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:11:46,770 1506   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:11:46,770 1506   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:11:46,770 1506   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,772 1508   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,772 1508   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:11:46,772 1508   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 10:11:46,772 1508   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,772 1508   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 10:11:46,776 1512   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,776 1512   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 10:11:46,776 1512   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:46,777 1513   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:11:46,777 1513   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:11:46,777 1513   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,778 1514   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 10:11:46,779 1515   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 10:11:46,781 1517   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 10:11:46,781 1517   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:11:46,781 1517   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 10:11:46,781 1517   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:11:46,781 1517   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:11:46,781 1517   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:11:46,781 1517   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:11:46,781 1517   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,784 1520   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,800 1536   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:11:46,800 1536   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 10:11:46,800 1536   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,800 1536   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 10:11:46,801 1537   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,801 1537   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting  --------------------------------------------------------
+2022-01-24 10:11:46,802 1538   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:46,803 1539   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:11:46,803 1539   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:11:46,803 1539   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:11:46,803 1539   [           main] DEBUG mpl.interceptor.LogInterceptor  - ---  finished --------------------------------------------------------
+2022-01-24 10:11:46,803 1539   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,805 1541   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,805 1541   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting DeployCmd --------------------------------------------------------
+2022-01-24 10:11:46,805 1541   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:46,806 1542   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,806 1542   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetNextIdBlockCmd --------------------------------------------------------
+2022-01-24 10:11:46,806 1542   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:46,806 1542   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:11:46,806 1542   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:11:46,806 1542   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,808 1544   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 10:11:46,808 1544   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: next.dbid(String)
+2022-01-24 10:11:46,811 1547   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 10:11:46,811 1547   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:11:46,811 1547   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update PropertyEntity[name=next.dbid, value=2501]
+2022-01-24 10:11:46,811 1547   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 1 update, 0 delete.
+2022-01-24 10:11:46,811 1547   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:11:46,812 1548   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: PropertyEntity[name=next.dbid, value=2501]
+2022-01-24 10:11:46,812 1548   [           main] DEBUG pertyEntityImpl.updateProperty  - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+2022-01-24 10:11:46,812 1548   [           main] DEBUG pertyEntityImpl.updateProperty  - ==> Parameters: 2(Integer), 2501(String), next.dbid(String), 1(Integer)
+2022-01-24 10:11:46,852 1588   [           main] DEBUG pertyEntityImpl.updateProperty  - <==    Updates: 1
+2022-01-24 10:11:46,852 1588   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:11:46,852 1588   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:11:46,852 1588   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,908 1644   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:11:46,908 1644   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,912 1648   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:46,912 1648   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:11:46,912 1648   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetNextIdBlockCmd finished --------------------------------------------------------
+2022-01-24 10:11:46,912 1648   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:46,912 1648   [           main] DEBUG mpl.bpmn.deployer.BpmnDeployer  - Processing deployment 出差申请流程
+2022-01-24 10:11:46,913 1649   [           main] DEBUG ployer.ParsedDeploymentBuilder  - Processing BPMN resource bpmn/evection.bpmn
+2022-01-24 10:11:47,010 1746   [           main] DEBUG er.handler.ProcessParseHandler  - Parsing process evection
+2022-01-24 10:11:47,014 1750   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 10:11:47,014 1750   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 10:11:47,014 1750   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:47,016 1752   [           main] DEBUG ctLatestProcessDefinitionByKey  - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+2022-01-24 10:11:47,016 1752   [           main] DEBUG ctLatestProcessDefinitionByKey  - ==> Parameters: evection(String), evection(String)
+2022-01-24 10:11:47,076 1812   [           main] DEBUG ctLatestProcessDefinitionByKey  - <==      Total: 0
+2022-01-24 10:11:47,079 1815   [           main] DEBUG ProcessDefinitionKeyNoTenantId  - ==>  Preparing: select J.* from ACT_RU_TIMER_JOB J inner join ACT_RE_PROCDEF P on J.PROC_DEF_ID_ = P.ID_ where J.HANDLER_TYPE_ = ? and P.KEY_ = ? and (P.TENANT_ID_ = '' or P.TENANT_ID_ is null) 
+2022-01-24 10:11:47,079 1815   [           main] DEBUG ProcessDefinitionKeyNoTenantId  - ==> Parameters: timer-start-event(String), evection(String)
+2022-01-24 10:11:47,090 1826   [           main] DEBUG ProcessDefinitionKeyNoTenantId  - <==      Total: 0
+2022-01-24 10:11:47,090 1826   [           main] INFO  mpl.bpmn.deployer.BpmnDeployer  - Process deployed: {id: evection:1:4, key: evection, name: 出差申请单 }
+2022-01-24 10:11:47,090 1826   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:47,090 1826   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetProcessDefinitionInfoCmd --------------------------------------------------------
+2022-01-24 10:11:47,090 1826   [           main] DEBUG ptor.CommandContextInterceptor  - Valid context found. Reusing it for the current command 'org.activiti.engine.impl.cmd.GetProcessDefinitionInfoCmd'
+2022-01-24 10:11:47,090 1826   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 10:11:47,092 1828   [           main] DEBUG itionInfoByProcessDefinitionId  - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+2022-01-24 10:11:47,092 1828   [           main] DEBUG itionInfoByProcessDefinitionId  - ==> Parameters: evection:1:4(String)
+2022-01-24 10:11:47,103 1839   [           main] DEBUG itionInfoByProcessDefinitionId  - <==      Total: 0
+2022-01-24 10:11:47,103 1839   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetProcessDefinitionInfoCmd finished --------------------------------------------------------
+2022-01-24 10:11:47,103 1839   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert ResourceEntity[id=2, name=bpmn/evection.png]
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert ResourceEntity[id=3, name=bpmn/evection.bpmn]
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert ProcessDefinitionEntity[evection:1:4]
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert DeploymentEntity[id=1, name=出差申请流程]
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 4 insert, 0 update, 0 delete.
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 10:11:47,103 1839   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: ProcessDefinitionEntity[evection:1:4]
+2022-01-24 10:11:47,103 1839   [           main] DEBUG tyImpl.insertProcessDefinition  - ==>  Preparing: insert into ACT_RE_PROCDEF(ID_, REV_, CATEGORY_, NAME_, KEY_, VERSION_, DEPLOYMENT_ID_, RESOURCE_NAME_, DGRM_RESOURCE_NAME_, DESCRIPTION_, HAS_START_FORM_KEY_, HAS_GRAPHICAL_NOTATION_ , SUSPENSION_STATE_, TENANT_ID_, ENGINE_VERSION_, APP_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-01-24 10:11:47,105 1841   [           main] DEBUG tyImpl.insertProcessDefinition  - ==> Parameters: evection:1:4(String), http://www.activiti.org/test(String), 出差申请单(String), evection(String), 1(Integer), 1(String), bpmn/evection.bpmn(String), bpmn/evection.png(String), null, false(Boolean), true(Boolean), 1(Integer), (String), null, null
+2022-01-24 10:11:47,113 1849   [           main] DEBUG tyImpl.insertProcessDefinition  - <==    Updates: 1
+2022-01-24 10:11:47,113 1849   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: DeploymentEntity[id=1, name=出差申请流程]
+2022-01-24 10:11:47,113 1849   [           main] DEBUG entEntityImpl.insertDeployment  - ==>  Preparing: insert into ACT_RE_DEPLOYMENT(ID_, NAME_, CATEGORY_, KEY_, TENANT_ID_, DEPLOY_TIME_, ENGINE_VERSION_, VERSION_, PROJECT_RELEASE_VERSION_) values(?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-01-24 10:11:47,128 1864   [           main] DEBUG entEntityImpl.insertDeployment  - ==> Parameters: 1(String), 出差申请流程(String), null, null, (String), 2022-01-24 10:11:46.805(Timestamp), null, 1(Integer), null
+2022-01-24 10:11:47,144 1880   [           main] DEBUG entEntityImpl.insertDeployment  - <==    Updates: 1
+2022-01-24 10:11:47,160 1896   [           main] DEBUG eEntityImpl.bulkInsertResource  - ==>  Preparing: INSERT INTO ACT_GE_BYTEARRAY(ID_, REV_, NAME_, BYTES_, DEPLOYMENT_ID_, GENERATED_) VALUES (?, 1, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?) 
+2022-01-24 10:11:47,161 1897   [           main] DEBUG eEntityImpl.bulkInsertResource  - ==> Parameters: 2(String), bpmn/evection.png(String), java.io.ByteArrayInputStream@7c18432b(ByteArrayInputStream), 1(String), false(Boolean), 3(String), bpmn/evection.bpmn(String), java.io.ByteArrayInputStream@7646731d(ByteArrayInputStream), 1(String), false(Boolean)
+2022-01-24 10:11:47,208 1944   [           main] DEBUG eEntityImpl.bulkInsertResource  - <==    Updates: 2
+2022-01-24 10:11:47,208 1944   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 10:11:47,209 1945   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 10:11:47,209 1945   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:47,221 1957   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 10:11:47,221 1957   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:47,222 1958   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 10:11:47,222 1958   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 10:11:47,222 1958   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- DeployCmd finished --------------------------------------------------------
+2022-01-24 10:11:47,222 1958   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:25,755 1      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 13:45:25,755 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 13:45:26,002 248    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 13:45:26,004 250    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 13:45:26,285 531    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 13:45:26,290 536    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 13:45:26,303 549    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 13:45:26,908 1154   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 13:45:26,910 1156   [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 13:45:26,910 1156   [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 13:45:26,910 1156   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 13:45:27,595 1841   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,595 1841   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 13:45:27,597 1843   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 13:45:27,603 1849   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 13:45:27,603 1849   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 13:45:27,603 1849   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 13:45:27,604 1850   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,643 1889   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 13:45:27,655 1901   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 13:45:27,671 1917   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 13:45:27,674 1920   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 13:45:27,675 1921   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 13:45:27,675 1921   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 13:45:27,675 1921   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 13:45:27,675 1921   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 13:45:27,675 1921   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 13:45:27,675 1921   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,676 1922   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,676 1922   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 13:45:27,676 1922   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 13:45:27,676 1922   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,677 1923   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 13:45:27,680 1926   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,680 1926   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 13:45:27,680 1926   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 13:45:27,680 1926   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 13:45:27,681 1927   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 13:45:27,681 1927   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,684 1930   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 13:45:27,684 1930   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 13:45:27,686 1932   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 13:45:27,686 1932   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 13:45:27,686 1932   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 13:45:27,686 1932   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 13:45:27,686 1932   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 13:45:27,686 1932   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 13:45:27,686 1932   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 13:45:27,686 1932   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,687 1933   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,687 1933   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 13:45:27,688 1934   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 13:45:27,688 1934   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,688 1934   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 13:45:27,689 1935   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,689 1935   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting StartProcessInstanceCmd --------------------------------------------------------
+2022-01-24 13:45:27,689 1935   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 13:45:27,689 1935   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 13:45:27,689 1935   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 13:45:27,689 1935   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:27,690 1936   [           main] DEBUG ctLatestProcessDefinitionByKey  - ==>  Preparing: select * from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) and VERSION_ = (select max(VERSION_) from ACT_RE_PROCDEF where KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null)) 
+2022-01-24 13:45:27,690 1936   [           main] DEBUG ctLatestProcessDefinitionByKey  - ==> Parameters: evection(String), evection(String)
+2022-01-24 13:45:27,695 1941   [           main] DEBUG ctLatestProcessDefinitionByKey  - <==      Total: 1
+2022-01-24 13:45:27,696 1942   [           main] DEBUG entEntityImpl.selectDeployment  - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+2022-01-24 13:45:27,696 1942   [           main] DEBUG entEntityImpl.selectDeployment  - ==> Parameters: 1(String)
+2022-01-24 13:45:27,702 1948   [           main] DEBUG entEntityImpl.selectDeployment  - <==      Total: 1
+2022-01-24 13:45:27,702 1948   [           main] DEBUG mpl.bpmn.deployer.BpmnDeployer  - Processing deployment 出差申请流程
+2022-01-24 13:45:27,703 1949   [           main] DEBUG .selectResourcesByDeploymentId  - ==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc 
+2022-01-24 13:45:27,703 1949   [           main] DEBUG .selectResourcesByDeploymentId  - ==> Parameters: 1(String)
+2022-01-24 13:45:27,713 1959   [           main] DEBUG .selectResourcesByDeploymentId  - <==      Total: 2
+2022-01-24 13:45:27,715 1961   [           main] DEBUG ployer.ParsedDeploymentBuilder  - Processing BPMN resource bpmn/evection.bpmn
+2022-01-24 13:45:27,759 2005   [           main] DEBUG er.handler.ProcessParseHandler  - Parsing process evection
+2022-01-24 13:45:27,762 2008   [           main] DEBUG ssDefinitionByDeploymentAndKey  - ==>  Preparing: select * from ACT_RE_PROCDEF where DEPLOYMENT_ID_ = ? and KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+2022-01-24 13:45:27,763 2009   [           main] DEBUG ssDefinitionByDeploymentAndKey  - ==> Parameters: 1(String), evection(String)
+2022-01-24 13:45:27,768 2014   [           main] DEBUG ssDefinitionByDeploymentAndKey  - <==      Total: 1
+2022-01-24 13:45:27,769 2015   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,769 2015   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetProcessDefinitionInfoCmd --------------------------------------------------------
+2022-01-24 13:45:27,769 2015   [           main] DEBUG ptor.CommandContextInterceptor  - Valid context found. Reusing it for the current command 'org.activiti.engine.impl.cmd.GetProcessDefinitionInfoCmd'
+2022-01-24 13:45:27,769 2015   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 13:45:27,770 2016   [           main] DEBUG itionInfoByProcessDefinitionId  - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+2022-01-24 13:45:27,770 2016   [           main] DEBUG itionInfoByProcessDefinitionId  - ==> Parameters: evection:1:4(String)
+2022-01-24 13:45:27,772 2018   [           main] DEBUG itionInfoByProcessDefinitionId  - <==      Total: 0
+2022-01-24 13:45:27,772 2018   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetProcessDefinitionInfoCmd finished --------------------------------------------------------
+2022-01-24 13:45:27,772 2018   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,773 2019   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,773 2019   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetNextIdBlockCmd --------------------------------------------------------
+2022-01-24 13:45:27,773 2019   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 13:45:27,773 2019   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 13:45:27,823 2069   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1091107430.
+2022-01-24 13:45:27,823 2069   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4108fa66]
+2022-01-24 13:45:27,824 2070   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 13:45:27,825 2071   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: next.dbid(String)
+2022-01-24 13:45:27,826 2072   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 13:45:27,827 2073   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 13:45:27,827 2073   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update PropertyEntity[name=next.dbid, value=5001]
+2022-01-24 13:45:27,827 2073   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 1 update, 0 delete.
+2022-01-24 13:45:27,827 2073   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 13:45:27,827 2073   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: PropertyEntity[name=next.dbid, value=5001]
+2022-01-24 13:45:27,827 2073   [           main] DEBUG pertyEntityImpl.updateProperty  - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+2022-01-24 13:45:27,827 2073   [           main] DEBUG pertyEntityImpl.updateProperty  - ==> Parameters: 3(Integer), 5001(String), next.dbid(String), 2(Integer)
+2022-01-24 13:45:27,831 2077   [           main] DEBUG pertyEntityImpl.updateProperty  - <==    Updates: 1
+2022-01-24 13:45:27,831 2077   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 13:45:27,831 2077   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 13:45:27,831 2077   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4108fa66]
+2022-01-24 13:45:27,840 2086   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 13:45:27,840 2086   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4108fa66]
+2022-01-24 13:45:27,841 2087   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@4108fa66]
+2022-01-24 13:45:27,841 2087   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 1091107430 to pool.
+2022-01-24 13:45:27,841 2087   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetNextIdBlockCmd finished --------------------------------------------------------
+2022-01-24 13:45:27,841 2087   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 13:45:27,841 2087   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,841 2087   [           main] DEBUG ity.ExecutionEntityManagerImpl  - Child execution Execution[ id '2502' ] - parent '2501' created with parent 2501
+2022-01-24 13:45:27,842 2088   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ContinueProcessOperation added to agenda
+2022-01-24 13:45:27,842 2088   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ContinueProcessOperation 
+2022-01-24 13:45:27,842 2088   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,843 2089   [           main] DEBUG genda.ContinueProcessOperation  - Executing activityBehavior class org.activiti.engine.impl.bpmn.behavior.NoneStartEventActivityBehavior on activity 'startevent1' with execution 2502
+2022-01-24 13:45:27,844 2090   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.TakeOutgoingSequenceFlowsOperation added to agenda
+2022-01-24 13:45:27,844 2090   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.TakeOutgoingSequenceFlowsOperation 
+2022-01-24 13:45:27,844 2090   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,844 2090   [           main] DEBUG OutgoingSequenceFlowsOperation  - Leaving flow node class org.activiti.bpmn.model.StartEvent with id 'startevent1' by following it's 1 outgoing sequenceflow
+2022-01-24 13:45:27,844 2090   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ContinueProcessOperation added to agenda
+2022-01-24 13:45:27,845 2091   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ContinueProcessOperation 
+2022-01-24 13:45:27,845 2091   [           main] DEBUG genda.ContinueProcessOperation  - Sequence flow 'flow1' encountered. Continuing process by following it using execution 2502
+2022-01-24 13:45:27,845 2091   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ContinueProcessOperation added to agenda
+2022-01-24 13:45:27,845 2091   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ContinueProcessOperation 
+2022-01-24 13:45:27,845 2091   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,845 2091   [           main] DEBUG genda.ContinueProcessOperation  - Executing activityBehavior class org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior on activity 'usertask1' with execution 2502
+2022-01-24 13:45:27,855 2101   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 13:45:27,855 2101   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 13:45:27,855 2101   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,855 2101   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,856 2102   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 13:45:27,856 2102   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 13:45:27,856 2102   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 13:45:27,856 2102   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ExecuteInactiveBehaviorsOperation added to agenda
+2022-01-24 13:45:27,856 2102   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ExecuteInactiveBehaviorsOperation 
+2022-01-24 13:45:27,856 2102   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 13:45:27,856 2102   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert HistoricActivityInstanceEntity[id=2503, activityId=startevent1, activityName=Start]
+2022-01-24 13:45:27,856 2102   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert HistoricActivityInstanceEntity[id=2504, activityId=usertask1, activityName=创建请假单]
+2022-01-24 13:45:27,856 2102   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert Task[id=2505, name=创建请假单]
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@2449cff7
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert org.activiti.engine.impl.persistence.entity.HistoricIdentityLinkEntityImpl@42a9a63e
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert ProcessInstance[2501]
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert Execution[ id '2502' ] - activity 'usertask1 - parent '2501'
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert HistoricProcessInstanceEntity[superProcessInstanceId=null]
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert IdentityLinkEntity[id=2506, type=participant, userId=zhansan, processInstanceId=2501]
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 9 insert, 0 update, 0 delete.
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 13:45:27,857 2103   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@2449cff7
+2022-01-24 13:45:27,857 2103   [           main] DEBUG mpl.insertHistoricTaskInstance  - ==>  Preparing: insert into ACT_HI_TASKINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, OWNER_, ASSIGNEE_, START_TIME_, CLAIM_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TASK_DEF_KEY_, FORM_KEY_, PRIORITY_, DUE_DATE_, CATEGORY_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 13:45:27,872 2118   [           main] DEBUG mpl.insertHistoricTaskInstance  - ==> Parameters: 2505(String), evection:1:4(String), 2501(String), 2502(String), 创建请假单(String), null, null, null, zhansan(String), 2022-01-24 13:45:27.855(Timestamp), null, null, null, null, usertask1(String), null, 50(Integer), null, null, (String)
+2022-01-24 13:45:27,887 2133   [           main] DEBUG mpl.insertHistoricTaskInstance  - <==    Updates: 1
+2022-01-24 13:45:27,887 2133   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: HistoricProcessInstanceEntity[superProcessInstanceId=null]
+2022-01-24 13:45:27,887 2133   [           main] DEBUG .insertHistoricProcessInstance  - ==>  Preparing: insert into ACT_HI_PROCINST ( ID_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, START_TIME_, END_TIME_, DURATION_, START_USER_ID_, START_ACT_ID_, END_ACT_ID_, SUPER_PROCESS_INSTANCE_ID_, DELETE_REASON_, TENANT_ID_, NAME_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 13:45:27,888 2134   [           main] DEBUG .insertHistoricProcessInstance  - ==> Parameters: 2501(String), 2501(String), null, evection:1:4(String), 2022-01-24 13:45:27.773(Timestamp), null, null, null, startevent1(String), null, null, null, (String), null
+2022-01-24 13:45:27,897 2143   [           main] DEBUG .insertHistoricProcessInstance  - <==    Updates: 1
+2022-01-24 13:45:27,917 2163   [           main] DEBUG InsertHistoricActivityInstance  - ==>  Preparing: insert into ACT_HI_ACTINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, ACT_ID_, TASK_ID_, CALL_PROC_INST_ID_, ACT_NAME_, ACT_TYPE_, ASSIGNEE_, START_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TENANT_ID_ ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-01-24 13:45:27,918 2164   [           main] DEBUG InsertHistoricActivityInstance  - ==> Parameters: 2503(String), evection:1:4(String), 2501(String), 2502(String), startevent1(String), null, null, Start(String), startEvent(String), null, 2022-01-24 13:45:27.842(Timestamp), 2022-01-24 13:45:27.844(Timestamp), 2(Long), null, (String), 2504(String), evection:1:4(String), 2501(String), 2502(String), usertask1(String), 2505(String), null, 创建请假单(String), userTask(String), zhansan(String), 2022-01-24 13:45:27.845(Timestamp), null, null, null, (String)
+2022-01-24 13:45:27,925 2171   [           main] DEBUG InsertHistoricActivityInstance  - <==    Updates: 2
+2022-01-24 13:45:27,925 2171   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: org.activiti.engine.impl.persistence.entity.HistoricIdentityLinkEntityImpl@42a9a63e
+2022-01-24 13:45:27,925 2171   [           main] DEBUG mpl.insertHistoricIdentityLink  - ==>  Preparing: insert into ACT_HI_IDENTITYLINK (ID_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_) values (?, ?, ?, ?, ?, ?) 
+2022-01-24 13:45:27,926 2172   [           main] DEBUG mpl.insertHistoricIdentityLink  - ==> Parameters: 2506(String), participant(String), zhansan(String), null, null, 2501(String)
+2022-01-24 13:45:27,937 2183   [           main] DEBUG mpl.insertHistoricIdentityLink  - <==    Updates: 1
+2022-01-24 13:45:27,938 2184   [           main] DEBUG EntityImpl.bulkInsertExecution  - ==>  Preparing: insert into ACT_RU_EXECUTION (ID_, REV_, PROC_INST_ID_, BUSINESS_KEY_, PROC_DEF_ID_, ACT_ID_, IS_ACTIVE_, IS_CONCURRENT_, IS_SCOPE_,IS_EVENT_SCOPE_, IS_MI_ROOT_, PARENT_ID_, SUPER_EXEC_, ROOT_PROC_INST_ID_, SUSPENSION_STATE_, TENANT_ID_, NAME_, START_TIME_, START_USER_ID_, IS_COUNT_ENABLED_, EVT_SUBSCR_COUNT_, TASK_COUNT_, JOB_COUNT_, TIMER_JOB_COUNT_, SUSP_JOB_COUNT_, DEADLETTER_JOB_COUNT_, VAR_COUNT_, ID_LINK_COUNT_, APP_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) , (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2022-01-24 13:45:27,940 2186   [           main] DEBUG EntityImpl.bulkInsertExecution  - ==> Parameters: 2501(String), 2501(String), null, evection:1:4(String), null, true(Boolean), false(Boolean), true(Boolean), false(Boolean), false(Boolean), null, null, 2501(String), 1(Integer), (String), null, 2022-01-24 13:45:27.773(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), null, 2502(String), 2501(String), null, evection:1:4(String), usertask1(String), true(Boolean), false(Boolean), false(Boolean), false(Boolean), false(Boolean), 2501(String), null, 2501(String), 1(Integer), (String), null, 2022-01-24 13:45:27.841(Timestamp), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), null
+2022-01-24 13:45:27,971 2217   [           main] DEBUG EntityImpl.bulkInsertExecution  - <==    Updates: 2
+2022-01-24 13:45:27,971 2217   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: Task[id=2505, name=创建请假单]
+2022-01-24 13:45:27,972 2218   [           main] DEBUG tity.TaskEntityImpl.insertTask  - ==>  Preparing: insert into ACT_RU_TASK (ID_, REV_, NAME_, BUSINESS_KEY_, PARENT_TASK_ID_, DESCRIPTION_, PRIORITY_, CREATE_TIME_, OWNER_, ASSIGNEE_, DELEGATION_, EXECUTION_ID_, PROC_INST_ID_, PROC_DEF_ID_, TASK_DEF_KEY_, DUE_DATE_, CATEGORY_, SUSPENSION_STATE_, TENANT_ID_, FORM_KEY_, CLAIM_TIME_, APP_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 13:45:27,972 2218   [           main] DEBUG tity.TaskEntityImpl.insertTask  - ==> Parameters: 2505(String), 创建请假单(String), null, null, null, 50(Integer), 2022-01-24 13:45:27.845(Timestamp), null, zhansan(String), null, 2502(String), 2501(String), evection:1:4(String), usertask1(String), null, null, 1(Integer), (String), null, null, null
+2022-01-24 13:45:27,982 2228   [           main] DEBUG tity.TaskEntityImpl.insertTask  - <==    Updates: 1
+2022-01-24 13:45:27,982 2228   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: IdentityLinkEntity[id=2506, type=participant, userId=zhansan, processInstanceId=2501]
+2022-01-24 13:45:27,982 2228   [           main] DEBUG kEntityImpl.insertIdentityLink  - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) 
+2022-01-24 13:45:27,983 2229   [           main] DEBUG kEntityImpl.insertIdentityLink  - ==> Parameters: 2506(String), participant(String), zhansan(String), null, null, 2501(String), null
+2022-01-24 13:45:27,998 2244   [           main] DEBUG kEntityImpl.insertIdentityLink  - <==    Updates: 1
+2022-01-24 13:45:27,999 2245   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 13:45:27,999 2245   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 13:45:27,999 2245   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:28,008 2254   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 13:45:28,008 2254   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:28,009 2255   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 13:45:28,009 2255   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 13:45:28,009 2255   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- StartProcessInstanceCmd finished --------------------------------------------------------
+2022-01-24 13:45:28,009 2255   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:19,098 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:00:19,099 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:00:19,285 187    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:00:19,287 189    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:00:19,520 422    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:00:19,524 426    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:00:19,534 436    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:00:20,003 905    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:00:20,005 907    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:00:20,005 907    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:00:20,005 907    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:00:20,639 1541   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:20,640 1542   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:00:20,641 1543   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:00:20,646 1548   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:00:20,646 1548   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:00:20,646 1548   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:00:20,646 1548   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,687 1589   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:00:20,697 1599   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:00:20,709 1611   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:00:20,713 1615   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:00:20,713 1615   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:00:20,713 1615   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:00:20,713 1615   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:00:20,713 1615   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:00:20,713 1615   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:00:20,713 1615   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,715 1617   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,715 1617   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:00:20,715 1617   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:00:20,715 1617   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:20,715 1617   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:00:20,719 1621   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:20,719 1621   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:00:20,719 1621   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:00:20,719 1621   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:00:20,720 1622   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:00:20,720 1622   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,721 1623   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:00:20,721 1623   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:00:20,723 1625   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:00:20,723 1625   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:00:20,723 1625   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:00:20,723 1625   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:00:20,723 1625   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:00:20,723 1625   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:00:20,723 1625   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:00:20,723 1625   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,724 1626   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,724 1626   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:00:20,725 1627   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:00:20,725 1627   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:20,725 1627   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:00:20,725 1627   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:00:20,725 1627   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting TaskQueryImpl --------------------------------------------------------
+2022-01-24 14:00:20,725 1627   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:00:20,755 1657   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:00:20,755 1657   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:00:20,755 1657   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,757 1659   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RU_TASK RES inner join ACT_RE_PROCDEF D on RES.PROC_DEF_ID_ = D.ID_ WHERE RES.ASSIGNEE_ = ? and D.KEY_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+2022-01-24 14:00:20,757 1659   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==> Parameters: zhangsan(String), evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:00:20,770 1672   [           main] DEBUG Impl.selectTaskByQueryCriteria  - <==      Total: 0
+2022-01-24 14:00:20,770 1672   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:00:20,771 1673   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:00:20,771 1673   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:00:20,771 1673   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:00:20,771 1673   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:00:20,771 1673   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:00:20,771 1673   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,772 1674   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:00:20,772 1674   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:00:20,772 1674   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- TaskQueryImpl finished --------------------------------------------------------
+2022-01-24 14:00:20,772 1674   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:28,566 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:02:28,567 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:02:28,746 180    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:02:28,748 182    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:02:28,954 388    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:02:28,957 391    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:02:28,968 402    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:02:29,426 860    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:02:29,427 861    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:02:29,427 861    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:02:29,427 861    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:02:30,003 1437   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:30,003 1437   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:02:30,005 1439   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:02:30,009 1443   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:02:30,010 1444   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:02:30,010 1444   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:02:30,010 1444   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,049 1483   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:02:30,059 1493   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:02:30,074 1508   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:02:30,077 1511   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:02:30,078 1512   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:02:30,078 1512   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:02:30,078 1512   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:02:30,078 1512   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:02:30,078 1512   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:02:30,079 1513   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,080 1514   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,080 1514   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:02:30,080 1514   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:02:30,081 1515   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:30,081 1515   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:02:30,084 1518   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:30,084 1518   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:02:30,084 1518   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:02:30,084 1518   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:02:30,084 1518   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:02:30,085 1519   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,086 1520   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:02:30,086 1520   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:02:30,088 1522   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:02:30,088 1522   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:02:30,088 1522   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:02:30,088 1522   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:02:30,088 1522   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:02:30,088 1522   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:02:30,088 1522   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:02:30,088 1522   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,090 1524   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,090 1524   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:02:30,090 1524   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:02:30,090 1524   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:30,090 1524   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:02:30,091 1525   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:02:30,091 1525   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting TaskQueryImpl --------------------------------------------------------
+2022-01-24 14:02:30,091 1525   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:02:30,121 1555   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:02:30,121 1555   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:02:30,121 1555   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,123 1557   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RU_TASK RES inner join ACT_RE_PROCDEF D on RES.PROC_DEF_ID_ = D.ID_ WHERE RES.ASSIGNEE_ = ? and D.KEY_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+2022-01-24 14:02:30,123 1557   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==> Parameters: zhansan(String), evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:02:30,127 1561   [           main] DEBUG Impl.selectTaskByQueryCriteria  - <==      Total: 1
+2022-01-24 14:02:30,128 1562   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:02:30,128 1562   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:02:30,128 1562   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:02:30,128 1562   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:02:30,128 1562   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:02:30,128 1562   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:02:30,128 1562   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,130 1564   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:02:30,130 1564   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:02:30,130 1564   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- TaskQueryImpl finished --------------------------------------------------------
+2022-01-24 14:02:30,130 1564   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:18,402 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:03:18,402 0      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:03:18,568 166    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:03:18,570 168    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:03:18,764 362    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:03:18,767 365    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:03:18,774 372    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:03:19,144 742    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:03:19,145 743    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:03:19,145 743    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:03:19,145 743    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:03:19,676 1274   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:19,676 1274   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:03:19,678 1276   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:03:19,682 1280   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:03:19,682 1280   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:03:19,682 1280   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:03:19,682 1280   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,724 1322   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:03:19,734 1332   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:03:19,747 1345   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:03:19,750 1348   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:03:19,750 1348   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:03:19,750 1348   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:03:19,750 1348   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:03:19,750 1348   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:03:19,750 1348   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:03:19,750 1348   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,752 1350   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,752 1350   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:03:19,752 1350   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:03:19,752 1350   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:19,752 1350   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:03:19,755 1353   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:19,755 1353   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:03:19,755 1353   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:03:19,755 1353   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:03:19,755 1353   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:03:19,756 1354   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,757 1355   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:03:19,757 1355   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:03:19,759 1357   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:03:19,759 1357   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:03:19,759 1357   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:03:19,759 1357   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:03:19,759 1357   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:03:19,759 1357   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:03:19,759 1357   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:03:19,759 1357   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,760 1358   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,761 1359   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:03:19,761 1359   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:03:19,761 1359   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:19,761 1359   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:03:19,761 1359   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:03:19,761 1359   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting TaskQueryImpl --------------------------------------------------------
+2022-01-24 14:03:19,761 1359   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:03:19,788 1386   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:03:19,788 1386   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:03:19,788 1386   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,790 1388   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RU_TASK RES inner join ACT_RE_PROCDEF D on RES.PROC_DEF_ID_ = D.ID_ WHERE RES.ASSIGNEE_ = ? and D.KEY_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+2022-01-24 14:03:19,790 1388   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==> Parameters: lisi(String), evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:03:19,794 1392   [           main] DEBUG Impl.selectTaskByQueryCriteria  - <==      Total: 0
+2022-01-24 14:03:19,794 1392   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:03:19,794 1392   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:03:19,794 1392   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:03:19,794 1392   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:03:19,794 1392   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:03:19,794 1392   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:03:19,794 1392   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,796 1394   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:03:19,796 1394   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:03:19,796 1394   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- TaskQueryImpl finished --------------------------------------------------------
+2022-01-24 14:03:19,796 1394   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:50,451 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:08:50,452 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:08:50,631 180    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:08:50,633 182    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:08:50,841 390    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:08:50,844 393    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:08:50,855 404    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:08:51,296 845    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:08:51,297 846    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:08:51,297 846    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:08:51,298 847    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:08:51,877 1426   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:51,878 1427   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:08:51,880 1429   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:51,886 1435   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:08:51,886 1435   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:08:51,886 1435   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:08:51,886 1435   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,936 1485   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:08:51,946 1495   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:08:51,959 1508   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:08:51,963 1512   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:08:51,963 1512   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:08:51,963 1512   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:08:51,963 1512   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:08:51,964 1513   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:08:51,964 1513   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:08:51,964 1513   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,967 1516   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,967 1516   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:08:51,967 1516   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:08:51,967 1516   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:51,967 1516   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:08:51,971 1520   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:51,971 1520   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:08:51,971 1520   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:51,971 1520   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:08:51,971 1520   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:08:51,971 1520   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,972 1521   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:08:51,973 1522   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:08:51,975 1524   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:08:51,975 1524   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:08:51,975 1524   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:08:51,975 1524   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:08:51,975 1524   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:08:51,975 1524   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:08:51,975 1524   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:08:51,975 1524   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,977 1526   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:51,977 1526   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:08:51,977 1526   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:08:51,977 1526   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:51,977 1526   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:08:51,978 1527   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:51,978 1527   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting TaskQueryImpl --------------------------------------------------------
+2022-01-24 14:08:51,978 1527   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:52,009 1558   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:08:52,010 1559   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:08:52,010 1559   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,011 1560   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RU_TASK RES inner join ACT_RE_PROCDEF D on RES.PROC_DEF_ID_ = D.ID_ WHERE RES.ASSIGNEE_ = ? and D.KEY_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+2022-01-24 14:08:52,011 1560   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==> Parameters: zhansan(String), evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:08:52,018 1567   [           main] DEBUG Impl.selectTaskByQueryCriteria  - <==      Total: 1
+2022-01-24 14:08:52,018 1567   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:08:52,018 1567   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:08:52,018 1567   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:08:52,018 1567   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:08:52,018 1567   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:08:52,019 1568   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:08:52,019 1568   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,020 1569   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,020 1569   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:08:52,020 1569   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- TaskQueryImpl finished --------------------------------------------------------
+2022-01-24 14:08:52,020 1569   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,022 1571   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,022 1571   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting CompleteTaskCmd --------------------------------------------------------
+2022-01-24 14:08:52,022 1571   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:52,022 1571   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:08:52,022 1571   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:08:52,022 1571   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,023 1572   [           main] DEBUG tity.TaskEntityImpl.selectTask  - ==>  Preparing: select * from ACT_RU_TASK where ID_ = ? 
+2022-01-24 14:08:52,023 1572   [           main] DEBUG tity.TaskEntityImpl.selectTask  - ==> Parameters: 2505(String)
+2022-01-24 14:08:52,025 1574   [           main] DEBUG tity.TaskEntityImpl.selectTask  - <==      Total: 1
+2022-01-24 14:08:52,025 1574   [           main] DEBUG tyImpl.selectVariablesByTaskId  - ==>  Preparing: select * from ACT_RU_VARIABLE where TASK_ID_ = ? 
+2022-01-24 14:08:52,026 1575   [           main] DEBUG tyImpl.selectVariablesByTaskId  - ==> Parameters: 2505(String)
+2022-01-24 14:08:52,029 1578   [           main] DEBUG tyImpl.selectVariablesByTaskId  - <==      Total: 0
+2022-01-24 14:08:52,030 1579   [           main] DEBUG tyImpl.selectProcessDefinition  - ==>  Preparing: select * from ACT_RE_PROCDEF where ID_ = ? 
+2022-01-24 14:08:52,030 1579   [           main] DEBUG tyImpl.selectProcessDefinition  - ==> Parameters: evection:1:4(String)
+2022-01-24 14:08:52,033 1582   [           main] DEBUG tyImpl.selectProcessDefinition  - <==      Total: 1
+2022-01-24 14:08:52,033 1582   [           main] DEBUG entEntityImpl.selectDeployment  - ==>  Preparing: select * from ACT_RE_DEPLOYMENT where ID_ = ? 
+2022-01-24 14:08:52,034 1583   [           main] DEBUG entEntityImpl.selectDeployment  - ==> Parameters: 1(String)
+2022-01-24 14:08:52,037 1586   [           main] DEBUG entEntityImpl.selectDeployment  - <==      Total: 1
+2022-01-24 14:08:52,037 1586   [           main] DEBUG mpl.bpmn.deployer.BpmnDeployer  - Processing deployment 出差申请流程
+2022-01-24 14:08:52,038 1587   [           main] DEBUG .selectResourcesByDeploymentId  - ==>  Preparing: select * from ACT_GE_BYTEARRAY where DEPLOYMENT_ID_ = ? order by NAME_ asc 
+2022-01-24 14:08:52,038 1587   [           main] DEBUG .selectResourcesByDeploymentId  - ==> Parameters: 1(String)
+2022-01-24 14:08:52,046 1595   [           main] DEBUG .selectResourcesByDeploymentId  - <==      Total: 2
+2022-01-24 14:08:52,046 1595   [           main] DEBUG ployer.ParsedDeploymentBuilder  - Processing BPMN resource bpmn/evection.bpmn
+2022-01-24 14:08:52,087 1636   [           main] DEBUG er.handler.ProcessParseHandler  - Parsing process evection
+2022-01-24 14:08:52,090 1639   [           main] DEBUG ssDefinitionByDeploymentAndKey  - ==>  Preparing: select * from ACT_RE_PROCDEF where DEPLOYMENT_ID_ = ? and KEY_ = ? and (TENANT_ID_ = '' or TENANT_ID_ is null) 
+2022-01-24 14:08:52,090 1639   [           main] DEBUG ssDefinitionByDeploymentAndKey  - ==> Parameters: 1(String), evection(String)
+2022-01-24 14:08:52,093 1642   [           main] DEBUG ssDefinitionByDeploymentAndKey  - <==      Total: 1
+2022-01-24 14:08:52,093 1642   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,094 1643   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetProcessDefinitionInfoCmd --------------------------------------------------------
+2022-01-24 14:08:52,094 1643   [           main] DEBUG ptor.CommandContextInterceptor  - Valid context found. Reusing it for the current command 'org.activiti.engine.impl.cmd.GetProcessDefinitionInfoCmd'
+2022-01-24 14:08:52,094 1643   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:52,095 1644   [           main] DEBUG itionInfoByProcessDefinitionId  - ==>  Preparing: select * from ACT_PROCDEF_INFO where PROC_DEF_ID_ = ? 
+2022-01-24 14:08:52,095 1644   [           main] DEBUG itionInfoByProcessDefinitionId  - ==> Parameters: evection:1:4(String)
+2022-01-24 14:08:52,100 1649   [           main] DEBUG itionInfoByProcessDefinitionId  - <==      Total: 0
+2022-01-24 14:08:52,100 1649   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetProcessDefinitionInfoCmd finished --------------------------------------------------------
+2022-01-24 14:08:52,100 1649   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,102 1651   [           main] DEBUG Impl.selectTasksByParentTaskId  - ==>  Preparing: select * from ACT_RU_TASK where PARENT_TASK_ID_ = ? 
+2022-01-24 14:08:52,102 1651   [           main] DEBUG Impl.selectTasksByParentTaskId  - ==> Parameters: 2505(String)
+2022-01-24 14:08:52,104 1653   [           main] DEBUG Impl.selectTasksByParentTaskId  - <==      Total: 0
+2022-01-24 14:08:52,105 1654   [           main] DEBUG Impl.selectIdentityLinksByTask  - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where TASK_ID_ = ? 
+2022-01-24 14:08:52,105 1654   [           main] DEBUG Impl.selectIdentityLinksByTask  - ==> Parameters: 2505(String)
+2022-01-24 14:08:52,107 1656   [           main] DEBUG Impl.selectIdentityLinksByTask  - <==      Total: 0
+2022-01-24 14:08:52,107 1656   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 14:08:52,107 1656   [           main] DEBUG mpl.selectHistoricTaskInstance  - ==>  Preparing: select * from ACT_HI_TASKINST where ID_ = ? 
+2022-01-24 14:08:52,107 1656   [           main] DEBUG mpl.selectHistoricTaskInstance  - ==> Parameters: 2505(String)
+2022-01-24 14:08:52,109 1658   [           main] DEBUG mpl.selectHistoricTaskInstance  - <==      Total: 1
+2022-01-24 14:08:52,110 1659   [           main] DEBUG tionEntityImpl.selectExecution  - ==>  Preparing: select E.*, S.PROC_INST_ID_ AS PARENT_PROC_INST_ID_ from ACT_RU_EXECUTION E LEFT OUTER JOIN ACT_RU_EXECUTION S ON E.SUPER_EXEC_ = S.ID_ where E.ID_ = ? 
+2022-01-24 14:08:52,110 1659   [           main] DEBUG tionEntityImpl.selectExecution  - ==> Parameters: 2502(String)
+2022-01-24 14:08:52,115 1664   [           main] DEBUG tionEntityImpl.selectExecution  - <==      Total: 1
+2022-01-24 14:08:52,115 1664   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.TriggerExecutionOperation added to agenda
+2022-01-24 14:08:52,116 1665   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.TriggerExecutionOperation 
+2022-01-24 14:08:52,116 1665   [           main] DEBUG yImpl.selectTasksByExecutionId  - ==>  Preparing: select distinct T.* from ACT_RU_TASK T where T.EXECUTION_ID_ = ? 
+2022-01-24 14:08:52,116 1665   [           main] DEBUG yImpl.selectTasksByExecutionId  - ==> Parameters: 2502(String)
+2022-01-24 14:08:52,119 1668   [           main] DEBUG yImpl.selectTasksByExecutionId  - <==      Total: 1
+2022-01-24 14:08:52,120 1669   [           main] DEBUG tionEntityImpl.selectExecution  - ==>  Preparing: select E.*, S.PROC_INST_ID_ AS PARENT_PROC_INST_ID_ from ACT_RU_EXECUTION E LEFT OUTER JOIN ACT_RU_EXECUTION S ON E.SUPER_EXEC_ = S.ID_ where E.ID_ = ? 
+2022-01-24 14:08:52,120 1669   [           main] DEBUG tionEntityImpl.selectExecution  - ==> Parameters: 2501(String)
+2022-01-24 14:08:52,124 1673   [           main] DEBUG tionEntityImpl.selectExecution  - <==      Total: 1
+2022-01-24 14:08:52,126 1675   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.TakeOutgoingSequenceFlowsOperation added to agenda
+2022-01-24 14:08:52,126 1675   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.TakeOutgoingSequenceFlowsOperation 
+2022-01-24 14:08:52,126 1675   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 14:08:52,128 1677   [           main] DEBUG stanceExecutionIdAndActivityId  - ==>  Preparing: select * from ACT_HI_ACTINST RES where EXECUTION_ID_ = ? and ACT_ID_ = ? and END_TIME_ is null 
+2022-01-24 14:08:52,128 1677   [           main] DEBUG stanceExecutionIdAndActivityId  - ==> Parameters: 2502(String), usertask1(String)
+2022-01-24 14:08:52,143 1692   [           main] DEBUG stanceExecutionIdAndActivityId  - <==      Total: 1
+2022-01-24 14:08:52,144 1693   [           main] DEBUG OutgoingSequenceFlowsOperation  - Leaving flow node class org.activiti.bpmn.model.UserTask with id 'usertask1' by following it's 1 outgoing sequenceflow
+2022-01-24 14:08:52,145 1694   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ContinueProcessOperation added to agenda
+2022-01-24 14:08:52,145 1694   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ContinueProcessOperation 
+2022-01-24 14:08:52,145 1694   [           main] DEBUG genda.ContinueProcessOperation  - Sequence flow 'flow2' encountered. Continuing process by following it using execution 2502
+2022-01-24 14:08:52,145 1694   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ContinueProcessOperation added to agenda
+2022-01-24 14:08:52,145 1694   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ContinueProcessOperation 
+2022-01-24 14:08:52,145 1694   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 14:08:52,145 1694   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,145 1694   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting GetNextIdBlockCmd --------------------------------------------------------
+2022-01-24 14:08:52,145 1694   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:08:52,145 1694   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:08:52,174 1723   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1933129092.
+2022-01-24 14:08:52,174 1723   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@73393584]
+2022-01-24 14:08:52,175 1724   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:08:52,175 1724   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: next.dbid(String)
+2022-01-24 14:08:52,177 1726   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:08:52,177 1726   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:08:52,177 1726   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update PropertyEntity[name=next.dbid, value=7501]
+2022-01-24 14:08:52,178 1727   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 1 update, 0 delete.
+2022-01-24 14:08:52,178 1727   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:08:52,178 1727   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: PropertyEntity[name=next.dbid, value=7501]
+2022-01-24 14:08:52,178 1727   [           main] DEBUG pertyEntityImpl.updateProperty  - ==>  Preparing: update ACT_GE_PROPERTY SET REV_ = ?, VALUE_ = ? where NAME_ = ? and REV_ = ? 
+2022-01-24 14:08:52,178 1727   [           main] DEBUG pertyEntityImpl.updateProperty  - ==> Parameters: 4(Integer), 7501(String), next.dbid(String), 3(Integer)
+2022-01-24 14:08:52,183 1732   [           main] DEBUG pertyEntityImpl.updateProperty  - <==    Updates: 1
+2022-01-24 14:08:52,183 1732   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:08:52,183 1732   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:08:52,183 1732   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@73393584]
+2022-01-24 14:08:52,188 1737   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:08:52,188 1737   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@73393584]
+2022-01-24 14:08:52,189 1738   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@73393584]
+2022-01-24 14:08:52,189 1738   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 1933129092 to pool.
+2022-01-24 14:08:52,189 1738   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- GetNextIdBlockCmd finished --------------------------------------------------------
+2022-01-24 14:08:52,189 1738   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:08:52,190 1739   [           main] DEBUG genda.ContinueProcessOperation  - Executing activityBehavior class org.activiti.engine.impl.bpmn.behavior.UserTaskActivityBehavior on activity 'usertask5' with execution 2502
+2022-01-24 14:08:52,200 1749   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 14:08:52,200 1749   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 14:08:52,201 1750   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 14:08:52,201 1750   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 14:08:52,201 1750   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: ACTIVITY
+2022-01-24 14:08:52,201 1750   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 14:08:52,201 1750   [           main] DEBUG IdentityLinksByProcessInstance  - ==>  Preparing: select * from ACT_RU_IDENTITYLINK where PROC_INST_ID_ = ? 
+2022-01-24 14:08:52,201 1750   [           main] DEBUG IdentityLinksByProcessInstance  - ==> Parameters: 2501(String)
+2022-01-24 14:08:52,204 1753   [           main] DEBUG IdentityLinksByProcessInstance  - <==      Total: 1
+2022-01-24 14:08:52,205 1754   [           main] DEBUG .history.DefaultHistoryManager  - Current history level: AUDIT, level required: AUDIT
+2022-01-24 14:08:52,205 1754   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.agenda.ExecuteInactiveBehaviorsOperation added to agenda
+2022-01-24 14:08:52,205 1754   [           main] DEBUG mpl.interceptor.CommandInvoker  - Executing operation class org.activiti.engine.impl.agenda.ExecuteInactiveBehaviorsOperation 
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert Task[id=5002, name=经理审批]
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert HistoricActivityInstanceEntity[id=5001, activityId=usertask5, activityName=经理审批]
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@1804f60d
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert org.activiti.engine.impl.persistence.entity.HistoricIdentityLinkEntityImpl@3a80515c
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   insert IdentityLinkEntity[id=5003, type=participant, userId=lisi, processInstanceId=2501]
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@547e29a4
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update HistoricActivityInstanceEntity[id=2504, activityId=usertask1, activityName=创建请假单]
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   update Execution[ id '2502' ] - activity 'usertask5 - parent '2501'
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  -   delete Task[id=2505, name=创建请假单] with id 2505
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 5 insert, 3 update, 1 delete.
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:08:52,206 1755   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@1804f60d
+2022-01-24 14:08:52,206 1755   [           main] DEBUG mpl.insertHistoricTaskInstance  - ==>  Preparing: insert into ACT_HI_TASKINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, NAME_, PARENT_TASK_ID_, DESCRIPTION_, OWNER_, ASSIGNEE_, START_TIME_, CLAIM_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TASK_DEF_KEY_, FORM_KEY_, PRIORITY_, DUE_DATE_, CATEGORY_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 14:08:52,218 1767   [           main] DEBUG mpl.insertHistoricTaskInstance  - ==> Parameters: 5002(String), evection:1:4(String), 2501(String), 2502(String), 经理审批(String), null, null, null, lisi(String), 2022-01-24 14:08:52.201(Timestamp), null, null, null, null, usertask5(String), null, 50(Integer), null, null, (String)
+2022-01-24 14:08:52,224 1773   [           main] DEBUG mpl.insertHistoricTaskInstance  - <==    Updates: 1
+2022-01-24 14:08:52,224 1773   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: HistoricActivityInstanceEntity[id=5001, activityId=usertask5, activityName=经理审批]
+2022-01-24 14:08:52,224 1773   [           main] DEBUG insertHistoricActivityInstance  - ==>  Preparing: insert into ACT_HI_ACTINST ( ID_, PROC_DEF_ID_, PROC_INST_ID_, EXECUTION_ID_, ACT_ID_, TASK_ID_, CALL_PROC_INST_ID_, ACT_NAME_, ACT_TYPE_, ASSIGNEE_, START_TIME_, END_TIME_, DURATION_, DELETE_REASON_, TENANT_ID_ ) values ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 14:08:52,224 1773   [           main] DEBUG insertHistoricActivityInstance  - ==> Parameters: 5001(String), evection:1:4(String), 2501(String), 2502(String), usertask5(String), 5002(String), null, 经理审批(String), userTask(String), lisi(String), 2022-01-24 14:08:52.19(Timestamp), null, null, null, (String)
+2022-01-24 14:08:52,228 1777   [           main] DEBUG insertHistoricActivityInstance  - <==    Updates: 1
+2022-01-24 14:08:52,228 1777   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: org.activiti.engine.impl.persistence.entity.HistoricIdentityLinkEntityImpl@3a80515c
+2022-01-24 14:08:52,228 1777   [           main] DEBUG mpl.insertHistoricIdentityLink  - ==>  Preparing: insert into ACT_HI_IDENTITYLINK (ID_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_) values (?, ?, ?, ?, ?, ?) 
+2022-01-24 14:08:52,229 1778   [           main] DEBUG mpl.insertHistoricIdentityLink  - ==> Parameters: 5003(String), participant(String), lisi(String), null, null, 2501(String)
+2022-01-24 14:08:52,233 1782   [           main] DEBUG mpl.insertHistoricIdentityLink  - <==    Updates: 1
+2022-01-24 14:08:52,233 1782   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: Task[id=5002, name=经理审批]
+2022-01-24 14:08:52,234 1783   [           main] DEBUG tity.TaskEntityImpl.insertTask  - ==>  Preparing: insert into ACT_RU_TASK (ID_, REV_, NAME_, BUSINESS_KEY_, PARENT_TASK_ID_, DESCRIPTION_, PRIORITY_, CREATE_TIME_, OWNER_, ASSIGNEE_, DELEGATION_, EXECUTION_ID_, PROC_INST_ID_, PROC_DEF_ID_, TASK_DEF_KEY_, DUE_DATE_, CATEGORY_, SUSPENSION_STATE_, TENANT_ID_, FORM_KEY_, CLAIM_TIME_, APP_VERSION_) values (?, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2022-01-24 14:08:52,234 1783   [           main] DEBUG tity.TaskEntityImpl.insertTask  - ==> Parameters: 5002(String), 经理审批(String), null, null, null, 50(Integer), 2022-01-24 14:08:52.19(Timestamp), null, lisi(String), null, 2502(String), 2501(String), evection:1:4(String), usertask5(String), null, null, 1(Integer), (String), null, null, null
+2022-01-24 14:08:52,238 1787   [           main] DEBUG tity.TaskEntityImpl.insertTask  - <==    Updates: 1
+2022-01-24 14:08:52,238 1787   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - inserting: IdentityLinkEntity[id=5003, type=participant, userId=lisi, processInstanceId=2501]
+2022-01-24 14:08:52,238 1787   [           main] DEBUG kEntityImpl.insertIdentityLink  - ==>  Preparing: insert into ACT_RU_IDENTITYLINK (ID_, REV_, TYPE_, USER_ID_, GROUP_ID_, TASK_ID_, PROC_INST_ID_, PROC_DEF_ID_) values (?, 1, ?, ?, ?, ?, ?, ?) 
+2022-01-24 14:08:52,238 1787   [           main] DEBUG kEntityImpl.insertIdentityLink  - ==> Parameters: 5003(String), participant(String), lisi(String), null, null, 2501(String), null
+2022-01-24 14:08:52,240 1789   [           main] DEBUG kEntityImpl.insertIdentityLink  - <==    Updates: 1
+2022-01-24 14:08:52,241 1790   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: org.activiti.engine.impl.persistence.entity.HistoricTaskInstanceEntityImpl@547e29a4
+2022-01-24 14:08:52,241 1790   [           main] DEBUG mpl.updateHistoricTaskInstance  - ==>  Preparing: update ACT_HI_TASKINST set PROC_DEF_ID_ = ?, EXECUTION_ID_ = ?, NAME_ = ?, PARENT_TASK_ID_ = ?, DESCRIPTION_ = ?, OWNER_ = ?, ASSIGNEE_ = ?, CLAIM_TIME_ = ?, END_TIME_ = ?, DURATION_ = ?, DELETE_REASON_ = ?, TASK_DEF_KEY_ = ?, FORM_KEY_ = ?, PRIORITY_ = ?, DUE_DATE_ = ?, CATEGORY_ = ? where ID_ = ? 
+2022-01-24 14:08:52,241 1790   [           main] DEBUG mpl.updateHistoricTaskInstance  - ==> Parameters: evection:1:4(String), 2502(String), 创建请假单(String), null, null, null, zhansan(String), null, 2022-01-24 14:08:52.109(Timestamp), 1404254(Long), null, usertask1(String), null, 50(Integer), null, null, 2505(String)
+2022-01-24 14:08:52,245 1794   [           main] DEBUG mpl.updateHistoricTaskInstance  - <==    Updates: 1
+2022-01-24 14:08:52,245 1794   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: HistoricActivityInstanceEntity[id=2504, activityId=usertask1, activityName=创建请假单]
+2022-01-24 14:08:52,246 1795   [           main] DEBUG updateHistoricActivityInstance  - ==>  Preparing: update ACT_HI_ACTINST set EXECUTION_ID_ = ?, ASSIGNEE_ = ?, END_TIME_ = ?, DURATION_ = ?, DELETE_REASON_ = ? where ID_ = ? 
+2022-01-24 14:08:52,246 1795   [           main] DEBUG updateHistoricActivityInstance  - ==> Parameters: 2502(String), zhansan(String), 2022-01-24 14:08:52.143(Timestamp), 1404298(Long), null, 2504(String)
+2022-01-24 14:08:52,250 1799   [           main] DEBUG updateHistoricActivityInstance  - <==    Updates: 1
+2022-01-24 14:08:52,250 1799   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - updating: Execution[ id '2502' ] - activity 'usertask5 - parent '2501'
+2022-01-24 14:08:52,250 1799   [           main] DEBUG tionEntityImpl.updateExecution  - ==>  Preparing: update ACT_RU_EXECUTION set REV_ = ?, BUSINESS_KEY_ = ?, PROC_DEF_ID_ = ?, ACT_ID_ = ?, IS_ACTIVE_ = ?, IS_CONCURRENT_ = ?, IS_SCOPE_ = ?, IS_EVENT_SCOPE_ = ?, IS_MI_ROOT_ = ?, PARENT_ID_ = ?, SUPER_EXEC_ = ?, ROOT_PROC_INST_ID_ = ?, SUSPENSION_STATE_ = ?, NAME_ = ?, IS_COUNT_ENABLED_ = ?, EVT_SUBSCR_COUNT_ = ?, TASK_COUNT_ = ?, JOB_COUNT_ = ?, TIMER_JOB_COUNT_ = ?, SUSP_JOB_COUNT_ = ?, DEADLETTER_JOB_COUNT_ = ?, VAR_COUNT_ = ?, ID_LINK_COUNT_ = ?, APP_VERSION_ = ? where ID_ = ? and REV_ = ? 
+2022-01-24 14:08:52,251 1800   [           main] DEBUG tionEntityImpl.updateExecution  - ==> Parameters: 2(Integer), null, evection:1:4(String), usertask5(String), true(Boolean), false(Boolean), false(Boolean), false(Boolean), false(Boolean), 2501(String), null, 2501(String), 1(Integer), null, false(Boolean), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), 0(Integer), null, 2502(String), 1(Integer)
+2022-01-24 14:08:52,255 1804   [           main] DEBUG tionEntityImpl.updateExecution  - <==    Updates: 1
+2022-01-24 14:08:52,256 1805   [           main] DEBUG tity.TaskEntityImpl.deleteTask  - ==>  Preparing: delete from ACT_RU_TASK where ID_ = ? and REV_ = ? 
+2022-01-24 14:08:52,256 1805   [           main] DEBUG tity.TaskEntityImpl.deleteTask  - ==> Parameters: 2505(String), 1(Integer)
+2022-01-24 14:08:52,259 1808   [           main] DEBUG tity.TaskEntityImpl.deleteTask  - <==    Updates: 1
+2022-01-24 14:08:52,259 1808   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:08:52,259 1808   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:08:52,259 1808   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Committing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,262 1811   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:08:52,263 1812   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,263 1812   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:08:52,263 1812   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:08:52,264 1813   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- CompleteTaskCmd finished --------------------------------------------------------
+2022-01-24 14:08:52,264 1813   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:50,506 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:11:50,507 1      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:11:50,673 167    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:11:50,675 169    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:11:50,871 365    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:11:50,874 368    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:11:50,885 379    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:11:51,307 801    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:11:51,308 802    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:11:51,308 802    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:11:51,308 802    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:11:51,850 1344   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:51,850 1344   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:11:51,852 1346   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:11:51,856 1350   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:11:51,856 1350   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:11:51,856 1350   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:11:51,856 1350   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,903 1397   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:11:51,913 1407   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:11:51,927 1421   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:11:51,930 1424   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:11:51,930 1424   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:11:51,930 1424   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:11:51,930 1424   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:11:51,931 1425   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:11:51,931 1425   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:11:51,931 1425   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,932 1426   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,932 1426   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:11:51,932 1426   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:11:51,932 1426   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:51,932 1426   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:11:51,935 1429   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:51,936 1430   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:11:51,936 1430   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:11:51,936 1430   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:11:51,936 1430   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:11:51,936 1430   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,937 1431   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:11:51,937 1431   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:11:51,939 1433   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:11:51,939 1433   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:11:51,939 1433   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:11:51,939 1433   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:11:51,939 1433   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:11:51,939 1433   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:11:51,939 1433   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:11:51,939 1433   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,941 1435   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,941 1435   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:11:51,941 1435   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:11:51,941 1435   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:51,941 1435   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:11:51,942 1436   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:11:51,942 1436   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting TaskQueryImpl --------------------------------------------------------
+2022-01-24 14:11:51,942 1436   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:11:51,969 1463   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:11:51,969 1463   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:11:51,969 1463   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,970 1464   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RU_TASK RES inner join ACT_RE_PROCDEF D on RES.PROC_DEF_ID_ = D.ID_ WHERE RES.ASSIGNEE_ = ? and D.KEY_ = ? order by RES.ID_ asc LIMIT ? OFFSET ? 
+2022-01-24 14:11:51,971 1465   [           main] DEBUG Impl.selectTaskByQueryCriteria  - ==> Parameters: lisi(String), evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:11:51,975 1469   [           main] DEBUG Impl.selectTaskByQueryCriteria  - <==      Total: 1
+2022-01-24 14:11:51,975 1469   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:11:51,975 1469   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:11:51,975 1469   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:11:51,975 1469   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:11:51,975 1469   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:11:51,975 1469   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:11:51,975 1469   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,976 1470   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:11:51,976 1470   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:11:51,977 1471   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- TaskQueryImpl finished --------------------------------------------------------
+2022-01-24 14:11:51,977 1471   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:46,926 0      [           main] INFO  activiti.engine.ProcessEngines  - Initializing process engine using configuration 'file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml'
+2022-01-24 14:21:46,926 0      [           main] INFO  activiti.engine.ProcessEngines  - initializing process engine for resource file:/Users/xujiale/IdeaProjects/acitivi/activitiDemo/target/classes/activiti.cfg.xml
+2022-01-24 14:21:47,120 194    [           main] DEBUG ry.xml.XmlBeanDefinitionReader  - Loaded 2 bean definitions from InputStream resource [resource loaded through InputStream]
+2022-01-24 14:21:47,122 196    [           main] DEBUG ort.DefaultListableBeanFactory  - Creating shared instance of singleton bean 'processEngineConfiguration'
+2022-01-24 14:21:47,339 413    [           main] DEBUG ProcessEngineConfigurationImpl  - initializing datasource to db: jdbc:mysql:///activiti? characterEncoding=utf-8&nullCatalogMeansCurrent=true&serverTimezone=UTC
+2022-01-24 14:21:47,343 417    [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2022-01-24 14:21:47,355 429    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2022-01-24 14:21:47,805 879    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 428696898.
+2022-01-24 14:21:47,806 880    [           main] DEBUG ProcessEngineConfigurationImpl  - database product name: 'MySQL'
+2022-01-24 14:21:47,806 880    [           main] DEBUG ProcessEngineConfigurationImpl  - using database type: mysql
+2022-01-24 14:21:47,806 880    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:21:48,331 1405   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:48,332 1406   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting SchemaOperationsProcessEngineBuild --------------------------------------------------------
+2022-01-24 14:21:48,333 1407   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:21:48,337 1411   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Executing performSchemaOperationsProcessEngineBuild with setting true
+2022-01-24 14:21:48,337 1411   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:21:48,338 1412   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:21:48,338 1412   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,385 1459   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:21:48,396 1470   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: schema.version(String)
+2022-01-24 14:21:48,407 1481   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:21:48,411 1485   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:21:48,411 1485   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:21:48,411 1485   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:21:48,411 1485   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:21:48,412 1486   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:21:48,412 1486   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:21:48,412 1486   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,414 1488   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,414 1488   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:21:48,415 1489   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- SchemaOperationsProcessEngineBuild finished --------------------------------------------------------
+2022-01-24 14:21:48,415 1489   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:48,415 1489   [           main] INFO  .engine.impl.ProcessEngineImpl  - ProcessEngine default created
+2022-01-24 14:21:48,418 1492   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:48,418 1492   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ValidateExecutionRelatedEntityCountCfgCmd --------------------------------------------------------
+2022-01-24 14:21:48,418 1492   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:21:48,418 1492   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:21:48,418 1492   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:21:48,419 1493   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,420 1494   [           main] DEBUG pertyEntityImpl.selectProperty  - ==>  Preparing: select * from ACT_GE_PROPERTY where NAME_ = ? 
+2022-01-24 14:21:48,420 1494   [           main] DEBUG pertyEntityImpl.selectProperty  - ==> Parameters: cfg.execution-related-entities-count(String)
+2022-01-24 14:21:48,422 1496   [           main] DEBUG pertyEntityImpl.selectProperty  - <==      Total: 1
+2022-01-24 14:21:48,423 1497   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:21:48,423 1497   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:21:48,423 1497   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:21:48,423 1497   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:21:48,423 1497   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:21:48,423 1497   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:21:48,423 1497   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,424 1498   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,424 1498   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:21:48,424 1498   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ValidateExecutionRelatedEntityCountCfgCmd finished --------------------------------------------------------
+2022-01-24 14:21:48,424 1498   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:48,424 1498   [           main] INFO  activiti.engine.ProcessEngines  - initialised process engine default
+2022-01-24 14:21:48,425 1499   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
+2022-01-24 14:21:48,425 1499   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- starting ProcessDefinitionQueryImpl --------------------------------------------------------
+2022-01-24 14:21:48,425 1499   [           main] DEBUG da.DefaultActivitiEngineAgenda  - Operation class org.activiti.engine.impl.interceptor.CommandInvoker$1 added to agenda
+2022-01-24 14:21:48,449 1523   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2022-01-24 14:21:48,449 1523   [           main] DEBUG source.pooled.PooledDataSource  - Checked out connection 428696898 from pool.
+2022-01-24 14:21:48,449 1523   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,450 1524   [           main] DEBUG cessDefinitionsByQueryCriteria  - ==>  Preparing: select distinct RES.* from ACT_RE_PROCDEF RES WHERE RES.KEY_ = ? order by RES.VERSION_ desc LIMIT ? OFFSET ? 
+2022-01-24 14:21:48,450 1524   [           main] DEBUG cessDefinitionsByQueryCriteria  - ==> Parameters: evection(String), 2147483647(Integer), 0(Integer)
+2022-01-24 14:21:48,454 1528   [           main] DEBUG cessDefinitionsByQueryCriteria  - <==      Total: 1
+2022-01-24 14:21:48,454 1528   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - Flushing dbSqlSession
+2022-01-24 14:21:48,454 1528   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - flush summary: 0 insert, 0 update, 0 delete.
+2022-01-24 14:21:48,454 1528   [           main] DEBUG ti.engine.impl.db.DbSqlSession  - now executing flush...
+2022-01-24 14:21:48,454 1528   [           main] DEBUG aloneMybatisTransactionContext  - firing event committing...
+2022-01-24 14:21:48,454 1528   [           main] DEBUG aloneMybatisTransactionContext  - committing the ibatis sql session...
+2022-01-24 14:21:48,454 1528   [           main] DEBUG aloneMybatisTransactionContext  - firing event committed...
+2022-01-24 14:21:48,454 1528   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,456 1530   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@198d6542]
+2022-01-24 14:21:48,456 1530   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 428696898 to pool.
+2022-01-24 14:21:48,456 1530   [           main] DEBUG mpl.interceptor.LogInterceptor  - --- ProcessDefinitionQueryImpl finished --------------------------------------------------------
+2022-01-24 14:21:48,456 1530   [           main] DEBUG mpl.interceptor.LogInterceptor  - 
+
