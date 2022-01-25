@@ -6,7 +6,7 @@ import org.activiti.engine.RuntimeService;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.junit.Test;
 
-public class demo02 {
+public class Test02 {
 
     /**
      * 启动流程实例，添加businessKey
