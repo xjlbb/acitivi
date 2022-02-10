@@ -41,7 +41,7 @@ public class Test03UEL {
         ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
         // 获取RuntimeService对象
         RuntimeService runtimeService = processEngine.getRuntimeService();
-        // 设置 assignee 的取值，
+        // 设置 assignee 的取值
         Map<String,Object> map = new HashMap<>();
         map.put("assignee0","张三");
         map.put("assignee1","李四");

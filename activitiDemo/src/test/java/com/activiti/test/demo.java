@@ -153,7 +153,7 @@ public class demo {
         ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
         RepositoryService repositoryService = engine.getRepositoryService();
         // 删除流程定义，如果该流程定义已经有了流程实例启动则删除时报错, 在ACT_RE_DEPLOYMENT中找ID
-        repositoryService.deleteDeployment("7501");
+        repositoryService.deleteDeployment("22501");
         // 设置为TRUE 级联删除流程定义，及时流程有实例启动，也可以删除，设置为false 非级联删 除操作。
         // repositoryService.deleteDeployment("12501",true);
     }
