@@ -7,6 +7,9 @@ import org.activiti.engine.RuntimeService;
 import org.activiti.engine.repository.Deployment;
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Test03UEL {
     /**
      * 先将定义的流程部署到Activi数据库中
@@ -39,7 +42,12 @@ public class Test03UEL {
         // 获取RuntimeService对象
         RuntimeService runtimeService = processEngine.getRuntimeService();
         // 设置 assignee 的取值，
-        runtimeService.startProcessInstanceByKey()
+        Map<String,Object> map = new HashMap<>();
+        map.put("assignee0","张三");
+        map.put("assignee1","李四");
+        map.put("assignee2","王五");
+        map.put("assignee3","赵财务");
         // 创建流程实例
+        runtimeService.startProcessInstanceByKey("evection-uel",map);
     }
 }

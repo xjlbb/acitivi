@@ -117,7 +117,8 @@ public class demo {
         Task task = taskService.createTaskQuery()
                 .processDefinitionKey("evection")
                 .taskAssignee("lisi")
-                .singleResult(); // 完成任务
+                .singleResult();
+        // 完成任务
         taskService.complete(task.getId());
     }
 
