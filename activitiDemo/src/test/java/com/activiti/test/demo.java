@@ -75,7 +75,7 @@ public class demo {
         // 2.获取RuntimeService对象
         RuntimeService runtimeService = engine.getRuntimeService();
         // 3.根据流程定义的id启动流程
-        String id= "evection";
+        String id= "evection-exclusive";
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(id);
         // 4.输出相关的流程实例信息
         System.out.println("流程定义的ID：" + processInstance.getProcessDefinitionId());
@@ -111,7 +111,8 @@ public class demo {
     /**
      * 流程任务的处理
      */
-    @Test public void test06(){
+    @Test
+    public void test06(){
         ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
         TaskService taskService = engine.getTaskService();
         Task task = taskService.createTaskQuery()

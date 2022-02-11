@@ -1,12 +1,11 @@
 package com.activiti.test;
 
 import com.activiti.pojo.Evection;
-import org.activiti.engine.ProcessEngine;
-import org.activiti.engine.ProcessEngines;
-import org.activiti.engine.RepositoryService;
-import org.activiti.engine.RuntimeService;
+import org.activiti.engine.*;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
+import org.activiti.engine.task.Task;
+import org.activiti.engine.task.TaskQuery;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -45,17 +44,34 @@ public class TestVariable {
         //创建出差对象 POJO
         Evection evection = new Evection();
         //设置出差天数
-        evection.setNum(2d);
+        evection.setNum(4d);
         //定义流程变量到集合中
         variables.put("evection",evection);
         //设置assignee的取值
-        variables.put("assignee0","张三");
-        variables.put("assignee1","李四");
-        variables.put("assignee2","王五");
-        variables.put("assignee3","赵财务");
+        variables.put("assignee0","张三1");
+        variables.put("assignee1","李四1");
+        variables.put("assignee2","王五1");
+        variables.put("assignee3","赵财务1");
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey(key, variables);
         //输出信息
         System.out.println("获取流程实例名称" + processInstance.getName());
         System.out.println("流程定义ID：" + processInstance.getProcessDefinitionId());
+    }
+
+    //完成任务
+    @Test
+    public void test03(){
+        String key = "evection-variable";
+        String assignee = "张三1";
+        ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
+        TaskService taskService = engine.getTaskService();
+        Task task = taskService.createTaskQuery()
+                .processDefinitionKey(key)
+                .taskAssignee(assignee)
+                .singleResult();
+        if (task != null){
+            taskService.complete(task.getId());
+            System.out.println("任务执行完成");
+        }
     }
 }
